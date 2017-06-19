@@ -36,7 +36,7 @@ module.exports = {
   
   ConvertNumberToCurrency: function (num) {
     var str = num.toString().substr(0,6);
-    str = str.slice(0, 5) + "." + str.slice(5);
+    str = str.slice(0, 4) + "." + str.slice(4);
     return parseFloat(str).toFixed(2);
   },
   CalculaValorDesejado: function (precoUltimaOrdem, tipoOp) {
